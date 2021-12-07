@@ -6,10 +6,12 @@ This repo contains Python code to interface with NEURON and simulate neurons (i.
 ### How to use the code
 
 In general, this code contains examples of how to: 
-- from Python, instantiate a neural morphology file (in the widely-used [SWC format](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html)) as an object in the NEURON interface 
-  - can also use synapse locations to instantiate synapses onto the morphology file
+- from Python, instantiate a neural morphology file (in the widely-used [SWC format](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html)) as a cell object in the NEURON interface 
+  - can also use synapse locations to instantiate synapses onto the cell object
   - for more help, check out the tutorials on [using Python with NEURON](https://neuron.yale.edu/neuron/docs/scripting-neuron-basics) 
 - once the object is in NEURON, the user can manipulate it in the built in graphical user interface (i.e. look at the morphology) and also conduct functional simulations, such as by activating assortments of synapses and measuring the depolarization at any location on the neuron 
+  - the user can also conduct manipulations to the neuron, such as by changing morphological features (i.e. lengthening or shortening neurites) or biophysical properties (i.e. making certain compartments isopotential by setting their axial resistances to close to zero), and understand how those manipulations affect functional properties
+- for the present work, the simulations are purely passive, but active properties can also be added in NEURON
 
 The notebook `generate attrs per LHN synapse.ipynb` will walk through the simulation of mEPSPs (activating a single synapse at a time, and also probing other synapse properties, such as local input resistances, distances from morphology landmarks, and more) onto the list of lateral horn neurons (higher-order Drosophila olfactory neurons) given in `21-05-07_LHN_SWCPointNo_to_NEURON.csv`. This data is used for Figures 5 and 6 of the paper. 
 
