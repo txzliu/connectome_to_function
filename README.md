@@ -7,4 +7,4 @@ To run, use a virtual environment (i.e. Anaconda) from which you can run NEURON 
 
 Requisite packages are imported in `nrn_cell.py`, and can be installed using a package manager like pip (i.e. `pip install numpy`). The `requirements_reference.txt` file provides package versions, but I do NOT recommend simultaneously installing all packages in the txt file with pip/conda, as it may introduce compatibility issues. Instead, use it as a reference in case version issues arise here with the import statements below. 
 
-Please reach out at any point if questions come up :) 
+Please reach out at any point if questions or comments come up to txliu@stanford.edu and james.jeanne@yale.edu. 
