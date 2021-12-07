@@ -1,7 +1,7 @@
 # connectome_to_function
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5716323.svg)](https://doi.org/10.5281/zenodo.5716323)
 
-This repo contains Python code to interface with NEURON and simulate neurons (i.e. mEPSPs, uEPSPs, input resistance measurements) from electron microscopy data (i.e. neural morphology SWC files from neuprint). This is a companion to **Liu, Davoudian, Lizbinski, Jeanne 2021**: *Connectomic features underlying diverse synaptic connection strengths and subcellular computation*. 
+This repo contains Python code to interface with NEURON and simulate neurons (i.e. mEPSPs, uEPSPs, input resistance measurements) from electron microscopy data (i.e. neural morphology SWC files, can be Drosophila neurons from neuprint). This is a companion to **Liu, Davoudian, Lizbinski, Jeanne 2021**: *Connectomic features underlying diverse synaptic connection strengths and subcellular computation*. 
 
 To run, use a virtual environment (i.e. Anaconda) from which you can run NEURON 7.7.2 and Python 3.7. Further, make sure to input your own user token to access the neuprint API (to load neural morphologies and synapse locations). An account can easily be created at the neuprint website (https://neuprint.janelia.org/). 
 
